@@ -1,5 +1,4 @@
 ﻿#include "MyForm.h"
-
 using namespace PickFood;
 [STAThread]
 #pragma comment(linker,"/subsystem:windows /ENTRY:mainCRTStartup")
