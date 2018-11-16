@@ -68,6 +68,7 @@ namespace PickFood {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->FoodPictureBox = (gcnew System::Windows::Forms::PictureBox());
@@ -231,6 +232,7 @@ namespace PickFood {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->FoodPictureBox);
 			this->Controls->Add(this->label1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::MyForm_KeyDown);
@@ -365,8 +367,7 @@ namespace PickFood {
 			if (timer1->Enabled == true) {
 				timer1->Stop();
 			}
-			else
-			{
+			else {
 				timer1->Start();
 			}
 		}
@@ -377,8 +378,7 @@ private: System::Void FoodPictureBox_Click(System::Object^  sender, System::Even
 		timer1->Stop();
 		this->label9->Visible = true;
 	}
-	else
-	{
+	else {
 		timer1->Start();
 		this->label9->Visible = false;
 	}
