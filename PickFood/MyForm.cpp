@@ -2,6 +2,7 @@
 using namespace PickFood;
 [STAThread]
 #pragma comment(linker,"/subsystem:windows /ENTRY:mainCRTStartup")
+
 int main()
 {
 	Application::EnableVisualStyles();
