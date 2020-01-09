@@ -36,23 +36,7 @@ namespace PickFood {
 		}
 	private: System::Windows::Forms::Timer^  timer1;
 	private: System::Windows::Forms::PictureBox^  FoodPictureBox;
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^  label9;
-
-
-
-
-
-
-
-
-
 	protected:
 	private: System::Windows::Forms::Label^  label1;
 	protected:
