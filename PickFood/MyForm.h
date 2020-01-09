@@ -290,5 +290,4 @@ private: System::Void FoodPictureBox_Click(System::Object^  sender, System::Even
 	}
 }
 };
-
 }
