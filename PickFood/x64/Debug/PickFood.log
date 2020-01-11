@@ -1,4 +1,3 @@
 ﻿  MyForm.cpp
-  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
   MyForm.obj : 遇到了 MSIL 模块；对 MSIL 禁用了增量链接；正在执行完全链接
   PickFood.vcxproj -> C:\Users\admin\source\repos\xiaozhishang\pickfood\x64\Debug\PickFood.exe
